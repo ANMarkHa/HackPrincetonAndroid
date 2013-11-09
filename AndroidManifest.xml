@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mark.SimpleApp"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"
+            android:targetSdkVersion="18"/>
+
+    <!--Add permissions to get access to different features-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name=".FirstActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!--Declare your activities here so that the app knows what activities you have -->
+        <activity android:name=".RelativeActivity" />
+        <activity android:name=".AdvancedActivity" />
+
+
+    </application>
+</manifest>
